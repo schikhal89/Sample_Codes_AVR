@@ -1,0 +1,621 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodqi4.o)
+                              joystick_main.o (__udivmodqi4)
+/usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodhi4.o)
+                              joystick_main.o (__udivmodhi4)
+/usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_divmodhi4.o)
+                              joystick_main.o (__divmodhi4)
+/usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o (exit)
+/usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_clear_bss.o)
+                              joystick_main.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                              joystick_main.o (sprintf)
+/usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                              /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o) (vfprintf)
+/usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strlen_P.o)
+                              /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strlen_P)
+/usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                              /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen_P)
+/usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                              /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen)
+/usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(fputc.o)
+                              /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (fputc)
+/usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodsi4.o)
+                              /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (__udivmodsi4)
+/usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_prologue.o)
+                              /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o) (__prologue_saves__)
+/usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_epilogue.o)
+                              /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o) (__epilogue_restores__)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+LOAD joystick_main.o
+LOAD /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xf34
+ *(.vectors)
+ .vectors       0x00000000       0x8c /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x0000008c                . = ALIGN (0x2)
+                0x0000008c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000008c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000008c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000008c                __ctors_start = .
+ *(.ctors)
+                0x0000008c                __ctors_end = .
+                0x0000008c                __dtors_start = .
+ *(.dtors)
+                0x0000008c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000008c        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+                0x0000008c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000008c        0xc /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000098       0x1a /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+                0x00000098                __do_copy_data
+ .init4         0x000000b2       0x10 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_clear_bss.o)
+                0x000000b2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000c2        0x8 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+ *(.init9)
+ *(.text)
+ .text          0x000000ca        0x4 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+                0x000000ca                __vector_22
+                0x000000ca                __vector_28
+                0x000000ca                __vector_1
+                0x000000ca                __vector_32
+                0x000000ca                __vector_34
+                0x000000ca                __vector_24
+                0x000000ca                __vector_12
+                0x000000ca                __bad_interrupt
+                0x000000ca                __vector_6
+                0x000000ca                __vector_31
+                0x000000ca                __vector_3
+                0x000000ca                __vector_23
+                0x000000ca                __vector_30
+                0x000000ca                __vector_25
+                0x000000ca                __vector_11
+                0x000000ca                __vector_13
+                0x000000ca                __vector_17
+                0x000000ca                __vector_19
+                0x000000ca                __vector_7
+                0x000000ca                __vector_27
+                0x000000ca                __vector_5
+                0x000000ca                __vector_33
+                0x000000ca                __vector_4
+                0x000000ca                __vector_9
+                0x000000ca                __vector_2
+                0x000000ca                __vector_15
+                0x000000ca                __vector_29
+                0x000000ca                __vector_26
+                0x000000ca                __vector_14
+                0x000000ca                __vector_10
+                0x000000ca                __vector_16
+                0x000000ca                __vector_18
+                0x000000ca                __vector_20
+ .text          0x000000ce      0x73a joystick_main.o
+                0x000001f4                lcd_showvalue
+                0x00000376                UART_Receive_char
+                0x000001b2                lcd_gotoxy1
+                0x0000047a                VT102DispStr
+                0x000007ca                UART_Receive_string
+                0x000001c2                lcd_char
+                0x00000366                UART_Transmit_char
+                0x000004ec                VT102DispClrScr
+                0x0000025e                WaitMs
+                0x000001ba                lcd_gotoxy2
+                0x00000150                lcd_string
+                0x000004fe                VT102DispChar
+                0x00000572                clearscreen
+                0x00000256                lcd_exit
+                0x0000027e                lcd_init
+                0x00000586                main
+                0x000000e8                toggleE
+                0x000002b4                UART_config
+                0x0000067e                __vector_21
+                0x000003a0                UART_Transmit_num
+                0x00000386                UART_Transmit_string
+                0x000006fc                __vector_8
+                0x00000126                lcd_putchar
+                0x000000f4                lcd_cmd
+                0x000000ce                dely_ns
+                0x00000424                VT102Attribute
+ .text          0x00000808        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x00000808        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00000808        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x00000808        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_exit.o)
+ .text          0x00000808        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000808       0x4a /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                0x00000808                sprintf
+ .text          0x00000852      0x530 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x00000852                vfprintf
+ .text          0x00000d82       0x12 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strlen_P.o)
+                0x00000d82                strlen_P
+ .text          0x00000d94       0x16 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x00000d94                strnlen_P
+ .text          0x00000daa       0x16 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x00000daa                strnlen
+ .text          0x00000dc0       0x5a /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(fputc.o)
+                0x00000dc0                fputc
+ .text          0x00000e1a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00000e1a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_prologue.o)
+ .text          0x00000e1a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_epilogue.o)
+                0x00000e1a                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000e1a       0x18 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodqi4.o)
+                0x00000e1a                __udivmodqi4
+ .text.libgcc   0x00000e32       0x28 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodhi4.o)
+                0x00000e32                __udivmodhi4
+ .text.libgcc   0x00000e5a       0x26 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_divmodhi4.o)
+                0x00000e5a                __divmodhi4
+                0x00000e5a                _div
+ .text.libgcc   0x00000e80        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000e80        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000e80       0x44 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodsi4.o)
+                0x00000e80                __udivmodsi4
+ .text.libgcc   0x00000ec4       0x38 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_prologue.o)
+                0x00000ec4                __prologue_saves__
+ .text.libgcc   0x00000efc       0x36 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_epilogue.o)
+                0x00000efc                __epilogue_restores__
+                0x00000f32                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000f32        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_exit.o)
+                0x00000f32                exit
+                0x00000f32                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000f32        0x2 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000f34                _etext = .
+
+.data           0x00800100       0x62 load address 0x00000f34
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+ .data          0x00800100       0x61 joystick_main.o
+                0x00800124                G_Joy_yvalue
+                0x00800123                G_Joy_xvalue
+                0x00800121                G_Joy_SPEED
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodqi4.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_exit.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strlen_P.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_prologue.o)
+ .data          0x00800161        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_epilogue.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800162                . = ALIGN (0x2)
+ *fill*         0x00800161        0x1 00
+                0x00800162                _edata = .
+                0x00800162                PROVIDE (__data_end, .)
+
+.bss            0x00800162        0x8 load address 0x00000f96
+                0x00800162                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800162        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+ .bss           0x00800162        0x8 joystick_main.o
+                0x00800163                j
+                0x00800162                k
+                0x00800164                save
+                0x00800165                G_Joy_over
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_exit.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strlen_P.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_prologue.o)
+ .bss           0x0080016a        0x0 /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_epilogue.o)
+ *(.bss*)
+ *(COMMON)
+                0x0080016a                PROVIDE (__bss_end, .)
+                0x00000f34                __data_load_start = LOADADDR (.data)
+                0x00000f96                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080016a        0x0
+                0x0080016a                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080016a                PROVIDE (__noinit_end, .)
+                0x0080016a                _end = .
+                0x0080016a                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1350
+ *(.stab)
+ .stab          0x00000000      0x414 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+ .stab          0x00000414      0x3cc /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                                0x3d8 (size before relaxing)
+ .stab          0x000007e0      0x7e0 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                0x9c0 (size before relaxing)
+ .stab          0x00000fc0       0x84 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strlen_P.o)
+                                 0x90 (size before relaxing)
+ .stab          0x00001044       0x9c /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                                 0xa8 (size before relaxing)
+ .stab          0x000010e0       0x9c /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                                 0xa8 (size before relaxing)
+ .stab          0x0000117c      0x1d4 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(fputc.o)
+                                0x3b4 (size before relaxing)
+
+.stabstr        0x00000000      0xc92
+ *(.stabstr)
+ .stabstr       0x00000000      0xc92 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 joystick_main.o
+
+.debug_pubnames
+                0x00000000      0x215
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x215 joystick_main.o
+
+.debug_info     0x00000000      0x803
+ *(.debug_info)
+ .debug_info    0x00000000      0x803 joystick_main.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x1e3
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x1e3 joystick_main.o
+
+.debug_line     0x00000000      0x715
+ *(.debug_line)
+ .debug_line    0x00000000      0x715 joystick_main.o
+
+.debug_frame    0x00000000      0x1b0
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x1b0 joystick_main.o
+
+.debug_str      0x00000000      0x294
+ *(.debug_str)
+ .debug_str     0x00000000      0x294 joystick_main.o
+                                0x2cd (size before relaxing)
+
+.debug_loc      0x00000000      0x3a8
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x3a8 joystick_main.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(joystick_main.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x18
+ .debug_ranges  0x00000000       0x18 joystick_main.o
+
+Cross Reference Table
+
+Symbol                                            File
+G_Joy_SPEED                                       joystick_main.o
+G_Joy_over                                        joystick_main.o
+G_Joy_xvalue                                      joystick_main.o
+G_Joy_yvalue                                      joystick_main.o
+UART_Receive_char                                 joystick_main.o
+UART_Receive_string                               joystick_main.o
+UART_Transmit_char                                joystick_main.o
+UART_Transmit_num                                 joystick_main.o
+UART_Transmit_string                              joystick_main.o
+UART_config                                       joystick_main.o
+VT102Attribute                                    joystick_main.o
+VT102DispChar                                     joystick_main.o
+VT102DispClrScr                                   joystick_main.o
+VT102DispStr                                      joystick_main.o
+WaitMs                                            joystick_main.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__bss_end                                         /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__data_load_start                                 /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__data_start                                      /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__divmodhi4                                       /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_divmodhi4.o)
+                                                  joystick_main.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_clear_bss.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(fputc.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                                                  joystick_main.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(fputc.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                                                  joystick_main.o
+__epilogue_restores__                             /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_epilogue.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+__heap_end                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__init                                            /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__prologue_saves__                                /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_prologue.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+__stack                                           /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+                                                  joystick_main.o
+__udivmodhi4                                      /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_divmodhi4.o)
+                                                  joystick_main.o
+__udivmodqi4                                      /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodqi4.o)
+                                                  joystick_main.o
+__udivmodsi4                                      /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_udivmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+__vector_1                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_10                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_11                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_12                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_13                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_14                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_15                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_16                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_17                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_18                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_19                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_2                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_20                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_21                                       joystick_main.o
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_22                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_23                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_24                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_25                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_26                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_27                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_28                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_29                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_3                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_30                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_31                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_32                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_33                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_34                                       /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_4                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_5                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_6                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_7                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_8                                        joystick_main.o
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_9                                        /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vector_default                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+__vectors                                         /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+_div                                              /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_exit.o)
+clearscreen                                       joystick_main.o
+dely_ns                                           joystick_main.o
+exit                                              /usr/lib/gcc/avr/4.2.2/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+fputc                                             /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(fputc.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+j                                                 joystick_main.o
+k                                                 joystick_main.o
+lcd_char                                          joystick_main.o
+lcd_cmd                                           joystick_main.o
+lcd_exit                                          joystick_main.o
+lcd_gotoxy1                                       joystick_main.o
+lcd_gotoxy2                                       joystick_main.o
+lcd_init                                          joystick_main.o
+lcd_putchar                                       joystick_main.o
+lcd_showvalue                                     joystick_main.o
+lcd_string                                        joystick_main.o
+main                                              joystick_main.o
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/crtm128.o
+save                                              joystick_main.o
+sprintf                                           /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                                                  joystick_main.o
+strlen_P                                          /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strlen_P.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+strnlen                                           /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+strnlen_P                                         /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+toggleE                                           joystick_main.o
+vfprintf                                          /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.2.2/../../../../avr/lib/avr5/libc.a(sprintf.o)

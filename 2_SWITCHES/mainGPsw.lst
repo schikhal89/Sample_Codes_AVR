@@ -1,0 +1,202 @@
+   1               		.file	"mainGPsw.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  17               	.Ltext0:
+  18               	.global	USART_Init
+  20               	USART_Init:
+  21               	.LFB3:
+  22               	.LM1:
+  23               	/* prologue: frame size=0 */
+  24               	/* prologue end (size=0) */
+  25               	.LVL0:
+  26               	.LM2:
+  27 0000 292F      		mov r18,r25
+  28 0002 3327      		clr r19
+  29 0004 2093 9800 		sts 152,r18
+  30               	.LM3:
+  31 0008 8093 9900 		sts 153,r24
+  32               	.LM4:
+  33 000c 88E1      		ldi r24,lo8(24)
+  34               	.LVL1:
+  35 000e 8093 9A00 		sts 154,r24
+  36               	.LM5:
+  37 0012 8EE0      		ldi r24,lo8(14)
+  38 0014 8093 9D00 		sts 157,r24
+  39               	/* epilogue: frame size=0 */
+  40 0018 0895      		ret
+  41               	/* epilogue end (size=1) */
+  42               	/* function USART_Init size 13 (12) */
+  43               	.LFE3:
+  45               	.global	Serial_Init
+  47               	Serial_Init:
+  48               	.LFB2:
+  49               	.LM6:
+  50               	/* prologue: frame size=0 */
+  51               	/* prologue end (size=0) */
+  52               	.LM7:
+  53 001a 87E6      		ldi r24,lo8(103)
+  54 001c 90E0      		ldi r25,hi8(103)
+  55 001e 0E94 0000 		call USART_Init
+  56               	/* epilogue: frame size=0 */
+  57 0022 0895      		ret
+  58               	/* epilogue end (size=1) */
+  59               	/* function Serial_Init size 5 (4) */
+  60               	.LFE2:
+  62               	.global	USART_Receive
+  64               	USART_Receive:
+  65               	.LFB4:
+  66               	.LM8:
+  67               	/* prologue: frame size=0 */
+  68               	/* prologue end (size=0) */
+  69               	.L7:
+  70               	.LM9:
+  71 0024 8091 9B00 		lds r24,155
+  72 0028 87FF      		sbrs r24,7
+  73 002a 00C0      		rjmp .L7
+  74               	.LM10:
+  75 002c 8091 9C00 		lds r24,156
+  76               	.LM11:
+  77 0030 9927      		clr r25
+  78               	/* epilogue: frame size=0 */
+  79 0032 0895      		ret
+  80               	/* epilogue end (size=1) */
+  81               	/* function USART_Receive size 8 (7) */
+  82               	.LFE4:
+  84               	.global	USART_Transmit
+  86               	USART_Transmit:
+  87               	.LFB5:
+  88               	.LM12:
+  89               	/* prologue: frame size=0 */
+  90               	/* prologue end (size=0) */
+  91               	.LVL2:
+  92 0034 982F      		mov r25,r24
+  93               	.LVL3:
+  94               	.L14:
+  95               	.LM13:
+  96 0036 8091 9B00 		lds r24,155
+  97 003a 85FF      		sbrs r24,5
+  98 003c 00C0      		rjmp .L14
+  99               	.LM14:
+ 100 003e 9093 9C00 		sts 156,r25
+ 101               	/* epilogue: frame size=0 */
+ 102 0042 0895      		ret
+ 103               	/* epilogue end (size=1) */
+ 104               	/* function USART_Transmit size 8 (7) */
+ 105               	.LFE5:
+ 107               	.global	print_string
+ 109               	print_string:
+ 110               	.LFB6:
+ 111               	.LM15:
+ 112               	/* prologue: frame size=0 */
+ 113               	/* prologue end (size=0) */
+ 114               	.LVL4:
+ 115 0044 FC01      		movw r30,r24
+ 116 0046 00C0      		rjmp .L20
+ 117               	.LVL5:
+ 118               	.L26:
+ 119               	.LBB4:
+ 120               	.LBB5:
+ 121               	.LM16:
+ 122 0048 8091 9B00 		lds r24,155
+ 123 004c 85FF      		sbrs r24,5
+ 124 004e 00C0      		rjmp .L26
+ 125               	.LBE5:
+ 126               	.LBE4:
+ 127               	.LM17:
+ 128 0050 3196      		adiw r30,1
+ 129               	.LBB6:
+ 130               	.LBB7:
+ 131               	.LM18:
+ 132 0052 9093 9C00 		sts 156,r25
+ 133               	.LVL6:
+ 134               	.L20:
+ 135               	.LBE7:
+ 136               	.LBE6:
+ 137               	.LM19:
+ 138 0056 9081      		ld r25,Z
+ 139 0058 9923      		tst r25
+ 140 005a 01F4      		brne .L26
+ 141               	/* epilogue: frame size=0 */
+ 142 005c 0895      		ret
+ 143               	/* epilogue end (size=1) */
+ 144               	/* function print_string size 13 (12) */
+ 145               	.LFE6:
+ 147               		.data
+ 148               	.LC0:
+ 149 0000 0A0D 2053 		.string	"\n\r START MAIN"
+ 149      5441 5254 
+ 149      204D 4149 
+ 149      4E00 
+ 150               	.LC1:
+ 151 000e 0A53 5731 		.string	"\nSW1 PRESSED"
+ 151      2050 5245 
+ 151      5353 4544 
+ 151      00
+ 152               	.LC2:
+ 153 001b 0A53 5732 		.string	"\nSW2 PRESSED"
+ 153      2050 5245 
+ 153      5353 4544 
+ 153      00
+ 154               		.text
+ 155               	.global	main
+ 157               	main:
+ 158               	.LFB7:
+ 159               	.LM20:
+ 160               	/* prologue: frame size=0 */
+ 161               	/* prologue end (size=0) */
+ 162               	.LM21:
+ 163 005e 0E94 0000 		call Serial_Init
+ 164               	.LM22:
+ 165 0062 80E0      		ldi r24,lo8(.LC0)
+ 166 0064 90E0      		ldi r25,hi8(.LC0)
+ 167 0066 0E94 0000 		call print_string
+ 168               	.LM23:
+ 169 006a 87B3      		in r24,55-0x20
+ 170 006c 8F73      		andi r24,lo8(63)
+ 171 006e 87BB      		out 55-0x20,r24
+ 172               	.L40:
+ 173               	.LM24:
+ 174 0070 B799      		sbic 54-0x20,7
+ 175 0072 00C0      		rjmp .L31
+ 176               	.LM25:
+ 177 0074 80E0      		ldi r24,lo8(.LC1)
+ 178 0076 90E0      		ldi r25,hi8(.LC1)
+ 179 0078 0E94 0000 		call print_string
+ 180               	.L31:
+ 181               	.LM26:
+ 182 007c 8699      		sbic 48-0x20,6
+ 183 007e 00C0      		rjmp .L40
+ 184               	.LM27:
+ 185 0080 80E0      		ldi r24,lo8(.LC2)
+ 186 0082 90E0      		ldi r25,hi8(.LC2)
+ 187 0084 0E94 0000 		call print_string
+ 188 0088 00C0      		rjmp .L40
+ 189               	/* epilogue: frame size=0 */
+ 190               	/* epilogue: noreturn */
+ 191               	/* epilogue end (size=0) */
+ 192               	/* function main size 22 (22) */
+ 193               	.LFE7:
+ 252               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 mainGPsw.c
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:3      *ABS*:0000003f __SREG__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:4      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:5      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:20     .text:00000000 USART_Init
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:47     .text:0000001a Serial_Init
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:64     .text:00000024 USART_Receive
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:86     .text:00000034 USART_Transmit
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:109    .text:00000044 print_string
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cck5aaaa.s:157    .text:0000005e main
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss

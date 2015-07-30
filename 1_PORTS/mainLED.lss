@@ -1,0 +1,170 @@
+
+mainLED.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000010e  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .debug_aranges 00000020  00000000  00000000  00000162  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  2 .debug_pubnames 00000028  00000000  00000000  00000182  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   000000ca  00000000  00000000  000001aa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 00000086  00000000  00000000  00000274  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   000000ae  00000000  00000000  000002fa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000030  00000000  00000000  000003a8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    0000008c  00000000  00000000  000003d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 46 00 	jmp	0x8c	; 0x8c <__ctors_end>
+   4:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+   8:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+   c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  10:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  14:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  18:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  1c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  20:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  24:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  28:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  2c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  30:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  34:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  38:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  3c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  40:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  44:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  48:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  4c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  50:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  54:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  58:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  5c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  60:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  64:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  68:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  6c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  70:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  74:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  78:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  7c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  80:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  84:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  88:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ee e0       	ldi	r30, 0x0E	; 14
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 30       	cpi	r26, 0x00	; 0
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	0e 94 63 00 	call	0xc6	; 0xc6 <main>
+  b6:	0c 94 85 00 	jmp	0x10a	; 0x10a <_exit>
+
+000000ba <__bad_interrupt>:
+  ba:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000be <LED_Init>:
+#define LEDPORTDIR	DDRC	/* set the PORT direction */
+#define LEDPORT		PORTC
+
+void LED_Init(void)
+{
+	LEDPORTDIR = 0xFF;	/* SET Direction of PORT as Output */
+  be:	8f ef       	ldi	r24, 0xFF	; 255
+  c0:	84 bb       	out	0x14, r24	; 20
+	LEDPORT = 0xFF;		/* Turn OFF all the LED */
+  c2:	85 bb       	out	0x15, r24	; 21
+}
+  c4:	08 95       	ret
+
+000000c6 <main>:
+
+int main(void)
+{
+  c6:	df 93       	push	r29
+  c8:	cf 93       	push	r28
+  ca:	00 d0       	rcall	.+0      	; 0xcc <main+0x6>
+  cc:	0f 92       	push	r0
+  ce:	cd b7       	in	r28, 0x3d	; 61
+  d0:	de b7       	in	r29, 0x3e	; 62
+#define LEDPORTDIR	DDRC	/* set the PORT direction */
+#define LEDPORT		PORTC
+
+void LED_Init(void)
+{
+	LEDPORTDIR = 0xFF;	/* SET Direction of PORT as Output */
+  d2:	8f ef       	ldi	r24, 0xFF	; 255
+  d4:	84 bb       	out	0x14, r24	; 20
+	LEDPORT = 0xFF;		/* Turn OFF all the LED */
+  d6:	85 bb       	out	0x15, r24	; 21
+
+	LED_Init();	/* Initializes LED as an output port and TURN OFF the LED's*/
+
+	while(1)
+	{
+		for(idelay=0;idelay<10;idelay++)	/* Software Delay */
+  d8:	19 82       	std	Y+1, r1	; 0x01
+  da:	10 c0       	rjmp	.+32     	; 0xfc <main+0x36>
+			for(jdelay=0;jdelay<60000;jdelay++);
+  dc:	1b 82       	std	Y+3, r1	; 0x03
+  de:	1a 82       	std	Y+2, r1	; 0x02
+  e0:	05 c0       	rjmp	.+10     	; 0xec <main+0x26>
+  e2:	8a 81       	ldd	r24, Y+2	; 0x02
+  e4:	9b 81       	ldd	r25, Y+3	; 0x03
+  e6:	01 96       	adiw	r24, 0x01	; 1
+  e8:	9b 83       	std	Y+3, r25	; 0x03
+  ea:	8a 83       	std	Y+2, r24	; 0x02
+  ec:	8a 81       	ldd	r24, Y+2	; 0x02
+  ee:	9b 81       	ldd	r25, Y+3	; 0x03
+  f0:	80 56       	subi	r24, 0x60	; 96
+  f2:	9a 4e       	sbci	r25, 0xEA	; 234
+  f4:	b0 f3       	brcs	.-20     	; 0xe2 <main+0x1c>
+
+	LED_Init();	/* Initializes LED as an output port and TURN OFF the LED's*/
+
+	while(1)
+	{
+		for(idelay=0;idelay<10;idelay++)	/* Software Delay */
+  f6:	89 81       	ldd	r24, Y+1	; 0x01
+  f8:	8f 5f       	subi	r24, 0xFF	; 255
+  fa:	89 83       	std	Y+1, r24	; 0x01
+  fc:	89 81       	ldd	r24, Y+1	; 0x01
+  fe:	8a 30       	cpi	r24, 0x0A	; 10
+ 100:	68 f3       	brcs	.-38     	; 0xdc <main+0x16>
+			for(jdelay=0;jdelay<60000;jdelay++);
+		EEARH |= (1 << 2);
+ 102:	fa 9a       	sbi	0x1f, 2	; 31
+		LEDPORT = LEDPORT ^ 0xFF;	/* Toggle the LED'S */
+ 104:	85 b3       	in	r24, 0x15	; 21
+ 106:	80 95       	com	r24
+ 108:	e6 cf       	rjmp	.-52     	; 0xd6 <main+0x10>
+
+0000010a <_exit>:
+ 10a:	f8 94       	cli
+
+0000010c <__stop_program>:
+ 10c:	ff cf       	rjmp	.-2      	; 0x10c <__stop_program>

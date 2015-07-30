@@ -1,0 +1,225 @@
+
+mainGPsw.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000028  00800100  00000154  000001c8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000154  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .stab         00000408  00000000  00000000  000001f0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      00000084  00000000  00000000  000005f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_aranges 00000020  00000000  00000000  0000067c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_pubnames 00000070  00000000  00000000  0000069c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000141  00000000  00000000  0000070c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000000d1  00000000  00000000  0000084d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000172  00000000  00000000  0000091e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000070  00000000  00000000  00000a90  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000000f4  00000000  00000000  00000b00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000005e  00000000  00000000  00000bf4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000018  00000000  00000000  00000c52  2**0
+                  CONTENTS, READONLY, DEBUGGING
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 46 00 	jmp	0x8c	; 0x8c <__ctors_end>
+   4:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+   8:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+   c:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  10:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  14:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  18:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  1c:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  20:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  24:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  28:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  2c:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  30:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  34:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  38:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  3c:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  40:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  44:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  48:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  4c:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  50:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  54:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  58:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  5c:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  60:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  64:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  68:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  6c:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  70:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  74:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  78:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  7c:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  80:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  84:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+  88:	0c 94 63 00 	jmp	0xc6	; 0xc6 <__bad_interrupt>
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e4 e5       	ldi	r30, 0x54	; 84
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a8 32       	cpi	r26, 0x28	; 40
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	11 e0       	ldi	r17, 0x01	; 1
+  b4:	a8 e2       	ldi	r26, 0x28	; 40
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a8 32       	cpi	r26, 0x28	; 40
+  be:	b1 07       	cpc	r27, r17
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	0c 94 94 00 	jmp	0x128	; 0x128 <main>
+
+000000c6 <__bad_interrupt>:
+  c6:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000ca <USART_Init>:
+		USART_Init ( MYUBRR );	/* SET THE BAUD RATE, ENABLE THE TRANSMISSION AND RECEPTION OF SERIAL, SET THE FRAME FORMAT */
+	}
+
+	void USART_Init( unsigned int ubrr )
+	{
+  ca:	29 2f       	mov	r18, r25
+  cc:	33 27       	eor	r19, r19
+  ce:	20 93 98 00 	sts	0x0098, r18
+	  UBRR1H = (unsigned char)(ubrr>>8); /* Set baud rate */
+	  UBRR1L = (unsigned char)ubrr;
+  d2:	80 93 99 00 	sts	0x0099, r24
+
+	  UCSR1B = (1<<RXEN)|(1<<TXEN);	/* Enable receiver and transmitter */
+  d6:	88 e1       	ldi	r24, 0x18	; 24
+  d8:	80 93 9a 00 	sts	0x009A, r24
+
+	  UCSR1C = (1<<USBS)|(3<<UCSZ0);/* Set frame format: 8data, 2stop bit */
+  dc:	8e e0       	ldi	r24, 0x0E	; 14
+  de:	80 93 9d 00 	sts	0x009D, r24
+  e2:	08 95       	ret
+
+000000e4 <Serial_Init>:
+  e4:	87 e6       	ldi	r24, 0x67	; 103
+  e6:	90 e0       	ldi	r25, 0x00	; 0
+  e8:	0e 94 65 00 	call	0xca	; 0xca <USART_Init>
+  ec:	08 95       	ret
+
+000000ee <USART_Receive>:
+	}
+
+	unsigned char USART_Receive( void )
+	{
+  ee:	80 91 9b 00 	lds	r24, 0x009B
+  f2:	87 ff       	sbrs	r24, 7
+  f4:	fc cf       	rjmp	.-8      	; 0xee <USART_Receive>
+	  while (!(UCSR1A & (1<<RXC))); /* Wait for data to be received */
+
+	  return UDR1;	/* Get and return received data from buffer */
+  f6:	80 91 9c 00 	lds	r24, 0x009C
+	}
+  fa:	99 27       	eor	r25, r25
+  fc:	08 95       	ret
+
+000000fe <USART_Transmit>:
+
+	void USART_Transmit( unsigned char data )
+	{
+  fe:	98 2f       	mov	r25, r24
+	  while (!(UCSR1A & (1<<UDRE)));	/* Wait for empty transmit buffer */
+ 100:	80 91 9b 00 	lds	r24, 0x009B
+ 104:	85 ff       	sbrs	r24, 5
+ 106:	fc cf       	rjmp	.-8      	; 0x100 <USART_Transmit+0x2>
+
+	  UDR1 = data;	/* Put data into buffer, sends the data */
+ 108:	90 93 9c 00 	sts	0x009C, r25
+ 10c:	08 95       	ret
+
+0000010e <print_string>:
+	}
+
+	void print_string(unsigned char *Mystr_ptr)
+	{
+ 10e:	fc 01       	movw	r30, r24
+ 110:	07 c0       	rjmp	.+14     	; 0x120 <print_string+0x12>
+ 112:	80 91 9b 00 	lds	r24, 0x009B
+ 116:	85 ff       	sbrs	r24, 5
+ 118:	fc cf       	rjmp	.-8      	; 0x112 <print_string+0x4>
+		while((*Mystr_ptr) != '\0')	/* print char from str pointer and point to next location */
+				USART_Transmit((*Mystr_ptr++));
+ 11a:	31 96       	adiw	r30, 0x01	; 1
+ 11c:	90 93 9c 00 	sts	0x009C, r25
+ 120:	90 81       	ld	r25, Z
+ 122:	99 23       	and	r25, r25
+ 124:	b1 f7       	brne	.-20     	; 0x112 <print_string+0x4>
+ 126:	08 95       	ret
+
+00000128 <main>:
+#define EXSW1 PINB & 0x80	/* This is External switche connected on uNiBoard SW1(PD7) */
+#define EXSW2 PIND & 0x40	/* This is External switche connected on uNiBoard SW2(PD6) */
+
+int main(void)
+{
+ 128:	0e 94 72 00 	call	0xe4	; 0xe4 <Serial_Init>
+
+	Serial_Init();
+	print_string("\n\r START MAIN");
+ 12c:	80 e0       	ldi	r24, 0x00	; 0
+ 12e:	91 e0       	ldi	r25, 0x01	; 1
+ 130:	0e 94 87 00 	call	0x10e	; 0x10e <print_string>
+
+	//PORTD = 0x00;
+	SW_DIR;
+ 134:	87 b3       	in	r24, 0x17	; 23
+ 136:	8f 73       	andi	r24, 0x3F	; 63
+ 138:	87 bb       	out	0x17, r24	; 23
+
+	while(1)
+	{
+		if(!(EXSW1))	/* check for pin for low */
+ 13a:	b7 99       	sbic	0x16, 7	; 22
+ 13c:	04 c0       	rjmp	.+8      	; 0x146 <main+0x1e>
+			print_string("\nSW1 PRESSED");
+ 13e:	8e e0       	ldi	r24, 0x0E	; 14
+ 140:	91 e0       	ldi	r25, 0x01	; 1
+ 142:	0e 94 87 00 	call	0x10e	; 0x10e <print_string>
+		if(!(EXSW2))	/* check for pin for low */
+ 146:	86 99       	sbic	0x10, 6	; 16
+ 148:	f8 cf       	rjmp	.-16     	; 0x13a <main+0x12>
+			print_string("\nSW2 PRESSED");
+ 14a:	8b e1       	ldi	r24, 0x1B	; 27
+ 14c:	91 e0       	ldi	r25, 0x01	; 1
+ 14e:	0e 94 87 00 	call	0x10e	; 0x10e <print_string>
+ 152:	f3 cf       	rjmp	.-26     	; 0x13a <main+0x12>

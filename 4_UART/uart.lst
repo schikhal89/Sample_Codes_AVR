@@ -1,0 +1,79 @@
+   1               		.file	"uart.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  17               	.Ltext0:
+  18               	.global	main
+  20               	main:
+  21               	.LFB6:
+  22               	.LM1:
+  23               	/* prologue: frame size=0 */
+  24               	/* prologue end (size=0) */
+  25               	.LM2:
+  26 0000 87E6      		ldi r24,lo8(103)
+  27 0002 8093 9900 		sts 153,r24
+  28               	.LM3:
+  29 0006 1092 9800 		sts 152,__zero_reg__
+  30               	.LM4:
+  31 000a 88E1      		ldi r24,lo8(24)
+  32 000c 8093 9A00 		sts 154,r24
+  33               	.LM5:
+  34 0010 86E8      		ldi r24,lo8(-122)
+  35 0012 8093 9D00 		sts 157,r24
+  36               	.LM6:
+  37 0016 8BE0      		ldi r24,lo8(11)
+  38 0018 60E0      		ldi r22,lo8(0)
+  39 001a 0E94 0000 		call __udivmodqi4
+  40 001e 282F      		mov r18,r24
+  41 0020 205D      		subi r18,lo8(-(48))
+  42 0022 E0E0      		ldi r30,lo8(0)
+  43 0024 F0E0      		ldi r31,hi8(0)
+  44               	.LVL0:
+  45               	.L10:
+  46               	.LM7:
+  47 0026 8091 9B00 		lds r24,155
+  48               	.LVL1:
+  49 002a 85FF      		sbrs r24,5
+  50 002c 00C0      		rjmp .L10
+  51               	.LM8:
+  52 002e 2093 9C00 		sts 156,r18
+  53               	.LBB8:
+  54               	.LBB9:
+  55               	.LBB10:
+  56               	.LBB11:
+  57               	.LM9:
+  58 0032 CF01      		movw r24,r30
+  59               	.LVL2:
+  60               	/* #APP */
+  61 0034 0197      		1: sbiw r24,1
+  62 0036 01F4      		brne 1b
+  63               	/* #NOAPP */
+  64 0038 00C0      		rjmp .L10
+  65               	.LBE11:
+  66               	.LBE10:
+  67               	.LBE9:
+  68               	.LBE8:
+  69               	/* epilogue: frame size=0 */
+  70               	/* epilogue: noreturn */
+  71               	/* epilogue end (size=0) */
+  72               	/* function main size 31 (31) */
+  73               	.LFE6:
+  97               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 uart.c
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cciiaaaa.s:3      *ABS*:0000003f __SREG__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cciiaaaa.s:4      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cciiaaaa.s:5      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cciiaaaa.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cciiaaaa.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\PRATHA~1\LOCALS~1\Temp/cciiaaaa.s:20     .text:00000000 main
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+__udivmodqi4
